@@ -1,0 +1,11 @@
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\miPrimerProyecto\miPrimerProyecto\bin\Debug\miPrimerProyecto.exe.config
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\miPrimerProyecto\miPrimerProyecto\bin\Debug\miPrimerProyecto.exe
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\miPrimerProyecto\miPrimerProyecto\bin\Debug\miPrimerProyecto.pdb
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\miPrimerProyecto\miPrimerProyecto\bin\Debug\miPrimerProyecto.xml
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\miPrimerProyecto\miPrimerProyecto\obj\Debug\miPrimerProyecto.vbproj.AssemblyReference.cache
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\miPrimerProyecto\miPrimerProyecto\obj\Debug\miPrimerProyecto.Resources.resources
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\miPrimerProyecto\miPrimerProyecto\obj\Debug\miPrimerProyecto.vbproj.GenerateResource.cache
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\miPrimerProyecto\miPrimerProyecto\obj\Debug\miPrimerProyecto.vbproj.CoreCompileInputs.cache
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\miPrimerProyecto\miPrimerProyecto\obj\Debug\miPrimerProyecto.exe
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\miPrimerProyecto\miPrimerProyecto\obj\Debug\miPrimerProyecto.xml
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\miPrimerProyecto\miPrimerProyecto\obj\Debug\miPrimerProyecto.pdb
