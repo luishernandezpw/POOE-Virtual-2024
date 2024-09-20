@@ -8,7 +8,8 @@
             Console.WriteLine("2. Determinar si un numero es primo o no.")
             Console.WriteLine("3. Serie Fibonacci.")
             Console.WriteLine("4. Tabla Multiplicar.")
-            Console.WriteLine("5. Salir.")
+            Console.WriteLine("5. Media Armonica.")
+            Console.WriteLine("6. Salir.")
             Console.Write("Opcion: ")
             Dim opcion As Integer = Console.ReadLine()
             Console.Clear()
@@ -21,10 +22,24 @@
                     fibonacci()
                 Case 4
                     tablaMultiplicar()
+                Case 5
+                    mediaArmonica()
                 Case Else
                     continuar = "n"
             End Select
         End While
+    End Sub
+    Sub mediaArmonica()
+        Dim serie() As String
+        Dim suma As Double = 0
+        Dim armonica As Double = 0
+        Console.Write("Serie: ")
+        serie = Console.ReadLine().Split(",")
+        For Each num As Integer In serie
+            suma = suma + 1 / num
+        Next
+        armonica = serie.Length / suma
+        Console.WriteLine("La media armonica es: {0}", Math.Round(armonica, 1))
     End Sub
     Sub tablaMultiplicar()
         Console.Write("Tabla: ")
