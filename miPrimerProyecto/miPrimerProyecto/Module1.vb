@@ -7,7 +7,8 @@
             Console.WriteLine("1. Determinar si un numero es par o impar.")
             Console.WriteLine("2. Determinar si un numero es primo o no.")
             Console.WriteLine("3. Serie Fibonacci.")
-            Console.WriteLine("4. Salir.")
+            Console.WriteLine("4. Tabla Multiplicar.")
+            Console.WriteLine("5. Salir.")
             Console.Write("Opcion: ")
             Dim opcion As Integer = Console.ReadLine()
             Console.Clear()
@@ -18,15 +19,24 @@
                     primo()
                 Case 3
                     fibonacci()
+                Case 4
+                    tablaMultiplicar()
                 Case Else
                     continuar = "n"
             End Select
-
         End While
+    End Sub
+    Sub tablaMultiplicar()
+        Console.Write("Tabla: ")
+        Dim i = 0, ntabla As Integer = Console.ReadLine()
+
+        For i = 1 To 10 Step 1
+            Console.WriteLine("{0}x{1}={2}", ntabla, i, ntabla * i)
+        Next
     End Sub
     Sub fibonacci()
         Console.Write("Maximo a mostrar: ")
-        Dim n As Integer = Integer.Parse(Console.ReadLine())
+        Dim n As Integer = Console.ReadLine()
         Dim a = 1, b = 0, c As Integer = 1
 
         While c <= n
