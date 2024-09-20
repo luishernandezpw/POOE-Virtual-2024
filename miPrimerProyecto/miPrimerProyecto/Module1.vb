@@ -10,7 +10,7 @@
             num = Console.ReadLine()
 
             Dim respuesta As String = "Impar"
-            If num Mod 2 = 0 Then
+            If (determinarParImpar(num)) Then
                 respuesta = "Par"
             End If
             Console.WriteLine("El numero {0} es: {1}", num, respuesta)
@@ -19,5 +19,8 @@
             continuar = Console.ReadLine()
         End While
     End Sub
+    Function determinarParImpar(ByVal num As Integer)
+        Return num Mod 2 = 0
+    End Function
 
 End Module
