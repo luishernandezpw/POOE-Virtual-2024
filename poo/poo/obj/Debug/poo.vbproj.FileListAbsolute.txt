@@ -1,0 +1,12 @@
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\poo\poo\bin\Debug\poo.exe.config
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\poo\poo\bin\Debug\poo.exe
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\poo\poo\bin\Debug\poo.pdb
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\poo\poo\bin\Debug\poo.xml
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\poo\poo\obj\Debug\poo.vbproj.AssemblyReference.cache
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\poo\poo\obj\Debug\poo.Form1.resources
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\poo\poo\obj\Debug\poo.Resources.resources
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\poo\poo\obj\Debug\poo.vbproj.GenerateResource.cache
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\poo\poo\obj\Debug\poo.vbproj.CoreCompileInputs.cache
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\poo\poo\obj\Debug\poo.exe
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\poo\poo\obj\Debug\poo.xml
+C:\Users\Luis Hernandez\Desktop\POOE-Virtual-2024\poo\poo\obj\Debug\poo.pdb
