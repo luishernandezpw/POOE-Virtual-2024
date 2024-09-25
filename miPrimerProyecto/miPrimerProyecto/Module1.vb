@@ -2,13 +2,29 @@
     Dim objEstadistica As New Estadistica
 
     Sub Main()
-        Console.Write("Serie: ")
-        Dim serie As String = Console.ReadLine()
-        Dim armonica As Double = objEstadistica.armonica(serie)
+        Dim continuar As Boolean = True
+        Do While continuar
+            Console.WriteLine("** MENU **")
+            Console.WriteLine("1. Media Armonica")
+            Console.WriteLine("2. Media Aritmetica")
+            Console.WriteLine("3. Salir")
+            Console.Write("Opcion: ")
+            Dim opcion As String = Console.ReadLine()
+            Console.Clear()
 
-        Console.WriteLine("Media armonica: {0}", Math.Round(armonica, 2))
-
-        Console.ReadKey() 'Pausa
+            Select Case opcion
+                Case 1
+                    Console.Write("Serie: ")
+                    Dim serie As String = Console.ReadLine()
+                    Console.WriteLine("Media Armonica: {0}", objEstadistica.armonica(serie))
+                Case 2
+                    Console.Write("Serie: ")
+                    Dim serie As String = Console.ReadLine()
+                    Console.WriteLine("Media Aritmetica: {0}", objEstadistica.media(serie))
+                Case Else
+                    continuar = False
+            End Select
+        Loop
     End Sub
 
 End Module
