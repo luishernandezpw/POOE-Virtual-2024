@@ -22,108 +22,96 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnProcesar = New System.Windows.Forms.Button()
-        Me.lblNum1 = New System.Windows.Forms.Label()
-        Me.txtNum1 = New System.Windows.Forms.TextBox()
-        Me.cboOpcion = New System.Windows.Forms.ComboBox()
-        Me.lblOpcion = New System.Windows.Forms.Label()
-        Me.txtNum2 = New System.Windows.Forms.TextBox()
-        Me.lblNum2 = New System.Windows.Forms.Label()
+        Me.cboDeptos = New System.Windows.Forms.ComboBox()
+        Me.lblDepto = New System.Windows.Forms.Label()
+        Me.lblMun = New System.Windows.Forms.Label()
+        Me.cboMun = New System.Windows.Forms.ComboBox()
+        Me.lblDistritos = New System.Windows.Forms.Label()
+        Me.cboDistritos = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
-        'btnProcesar
+        'cboDeptos
         '
-        Me.btnProcesar.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnProcesar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnProcesar.Location = New System.Drawing.Point(179, 146)
-        Me.btnProcesar.Name = "btnProcesar"
-        Me.btnProcesar.Size = New System.Drawing.Size(162, 55)
-        Me.btnProcesar.TabIndex = 0
-        Me.btnProcesar.Text = "Calcular"
-        Me.btnProcesar.UseVisualStyleBackColor = True
+        Me.cboDeptos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboDeptos.FormattingEnabled = True
+        Me.cboDeptos.Location = New System.Drawing.Point(90, 33)
+        Me.cboDeptos.Name = "cboDeptos"
+        Me.cboDeptos.Size = New System.Drawing.Size(175, 21)
+        Me.cboDeptos.TabIndex = 3
         '
-        'lblNum1
+        'lblDepto
         '
-        Me.lblNum1.AutoSize = True
-        Me.lblNum1.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNum1.ForeColor = System.Drawing.Color.Green
-        Me.lblNum1.Location = New System.Drawing.Point(12, 25)
-        Me.lblNum1.Name = "lblNum1"
-        Me.lblNum1.Size = New System.Drawing.Size(75, 22)
-        Me.lblNum1.TabIndex = 1
-        Me.lblNum1.Text = "Num 1:"
+        Me.lblDepto.AutoSize = True
+        Me.lblDepto.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDepto.ForeColor = System.Drawing.Color.Green
+        Me.lblDepto.Location = New System.Drawing.Point(12, 32)
+        Me.lblDepto.Name = "lblDepto"
+        Me.lblDepto.Size = New System.Drawing.Size(72, 22)
+        Me.lblDepto.TabIndex = 4
+        Me.lblDepto.Text = "Depto:"
         '
-        'txtNum1
+        'lblMun
         '
-        Me.txtNum1.Location = New System.Drawing.Point(93, 29)
-        Me.txtNum1.Name = "txtNum1"
-        Me.txtNum1.Size = New System.Drawing.Size(136, 20)
-        Me.txtNum1.TabIndex = 2
+        Me.lblMun.AutoSize = True
+        Me.lblMun.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMun.ForeColor = System.Drawing.Color.Green
+        Me.lblMun.Location = New System.Drawing.Point(286, 32)
+        Me.lblMun.Name = "lblMun"
+        Me.lblMun.Size = New System.Drawing.Size(58, 22)
+        Me.lblMun.TabIndex = 6
+        Me.lblMun.Text = "Mun:"
         '
-        'cboOpcion
+        'cboMun
         '
-        Me.cboOpcion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboOpcion.FormattingEnabled = True
-        Me.cboOpcion.Items.AddRange(New Object() {"Suma", "Resta", "Multiplicacion", "Division"})
-        Me.cboOpcion.Location = New System.Drawing.Point(338, 62)
-        Me.cboOpcion.Name = "cboOpcion"
-        Me.cboOpcion.Size = New System.Drawing.Size(155, 21)
-        Me.cboOpcion.TabIndex = 3
+        Me.cboMun.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboMun.FormattingEnabled = True
+        Me.cboMun.Location = New System.Drawing.Point(350, 33)
+        Me.cboMun.Name = "cboMun"
+        Me.cboMun.Size = New System.Drawing.Size(175, 21)
+        Me.cboMun.TabIndex = 5
         '
-        'lblOpcion
+        'lblDistritos
         '
-        Me.lblOpcion.AutoSize = True
-        Me.lblOpcion.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOpcion.ForeColor = System.Drawing.Color.Green
-        Me.lblOpcion.Location = New System.Drawing.Point(248, 58)
-        Me.lblOpcion.Name = "lblOpcion"
-        Me.lblOpcion.Size = New System.Drawing.Size(84, 22)
-        Me.lblOpcion.TabIndex = 4
-        Me.lblOpcion.Text = "Opcion:"
+        Me.lblDistritos.AutoSize = True
+        Me.lblDistritos.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDistritos.ForeColor = System.Drawing.Color.Green
+        Me.lblDistritos.Location = New System.Drawing.Point(110, 84)
+        Me.lblDistritos.Name = "lblDistritos"
+        Me.lblDistritos.Size = New System.Drawing.Size(84, 22)
+        Me.lblDistritos.TabIndex = 8
+        Me.lblDistritos.Text = "Distrito:"
         '
-        'txtNum2
+        'cboDistritos
         '
-        Me.txtNum2.Location = New System.Drawing.Point(93, 81)
-        Me.txtNum2.Name = "txtNum2"
-        Me.txtNum2.Size = New System.Drawing.Size(136, 20)
-        Me.txtNum2.TabIndex = 6
-        '
-        'lblNum2
-        '
-        Me.lblNum2.AutoSize = True
-        Me.lblNum2.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNum2.ForeColor = System.Drawing.Color.Green
-        Me.lblNum2.Location = New System.Drawing.Point(12, 77)
-        Me.lblNum2.Name = "lblNum2"
-        Me.lblNum2.Size = New System.Drawing.Size(75, 22)
-        Me.lblNum2.TabIndex = 5
-        Me.lblNum2.Text = "Num 2:"
+        Me.cboDistritos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboDistritos.FormattingEnabled = True
+        Me.cboDistritos.Location = New System.Drawing.Point(200, 88)
+        Me.cboDistritos.Name = "cboDistritos"
+        Me.cboDistritos.Size = New System.Drawing.Size(175, 21)
+        Me.cboDistritos.TabIndex = 7
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(537, 246)
-        Me.Controls.Add(Me.txtNum2)
-        Me.Controls.Add(Me.lblNum2)
-        Me.Controls.Add(Me.lblOpcion)
-        Me.Controls.Add(Me.cboOpcion)
-        Me.Controls.Add(Me.txtNum1)
-        Me.Controls.Add(Me.lblNum1)
-        Me.Controls.Add(Me.btnProcesar)
+        Me.ClientSize = New System.Drawing.Size(587, 186)
+        Me.Controls.Add(Me.lblDistritos)
+        Me.Controls.Add(Me.cboDistritos)
+        Me.Controls.Add(Me.lblMun)
+        Me.Controls.Add(Me.cboMun)
+        Me.Controls.Add(Me.lblDepto)
+        Me.Controls.Add(Me.cboDeptos)
         Me.Name = "Form1"
-        Me.Text = "Saludar"
+        Me.Text = "Direcciones en El Salvador"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents btnProcesar As Button
-    Friend WithEvents lblNum1 As Label
-    Friend WithEvents txtNum1 As TextBox
-    Friend WithEvents cboOpcion As ComboBox
-    Friend WithEvents lblOpcion As Label
-    Friend WithEvents txtNum2 As TextBox
-    Friend WithEvents lblNum2 As Label
+    Friend WithEvents cboDeptos As ComboBox
+    Friend WithEvents lblDepto As Label
+    Friend WithEvents lblMun As Label
+    Friend WithEvents cboMun As ComboBox
+    Friend WithEvents lblDistritos As Label
+    Friend WithEvents cboDistritos As ComboBox
 End Class
