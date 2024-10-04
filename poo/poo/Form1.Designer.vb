@@ -23,33 +23,31 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.lblMetros = New System.Windows.Forms.Label()
-        Me.txtMetros = New System.Windows.Forms.TextBox()
+        Me.lblNumero = New System.Windows.Forms.Label()
+        Me.txtNumero = New System.Windows.Forms.TextBox()
         Me.lblRespuesta = New System.Windows.Forms.Label()
-        Me.btnCalcular = New System.Windows.Forms.Button()
+        Me.btnConvertir = New System.Windows.Forms.Button()
         Me.erpConsumo = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.ltsHistorial = New System.Windows.Forms.ListBox()
-        Me.lblHistorial = New System.Windows.Forms.Label()
-        Me.lblPago = New System.Windows.Forms.Label()
+        Me.lblValorLetras = New System.Windows.Forms.Label()
         CType(Me.erpConsumo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'lblMetros
+        'lblNumero
         '
-        Me.lblMetros.AutoSize = True
-        Me.lblMetros.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMetros.Location = New System.Drawing.Point(30, 30)
-        Me.lblMetros.Name = "lblMetros"
-        Me.lblMetros.Size = New System.Drawing.Size(79, 24)
-        Me.lblMetros.TabIndex = 0
-        Me.lblMetros.Text = "Metros:"
+        Me.lblNumero.AutoSize = True
+        Me.lblNumero.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumero.Location = New System.Drawing.Point(30, 30)
+        Me.lblNumero.Name = "lblNumero"
+        Me.lblNumero.Size = New System.Drawing.Size(91, 24)
+        Me.lblNumero.TabIndex = 0
+        Me.lblNumero.Text = "Numero:"
         '
-        'txtMetros
+        'txtNumero
         '
-        Me.txtMetros.Location = New System.Drawing.Point(115, 35)
-        Me.txtMetros.Name = "txtMetros"
-        Me.txtMetros.Size = New System.Drawing.Size(118, 20)
-        Me.txtMetros.TabIndex = 1
+        Me.txtNumero.Location = New System.Drawing.Point(127, 35)
+        Me.txtNumero.Name = "txtNumero"
+        Me.txtNumero.Size = New System.Drawing.Size(118, 20)
+        Me.txtNumero.TabIndex = 1
         '
         'lblRespuesta
         '
@@ -57,79 +55,57 @@ Partial Class Form1
         Me.lblRespuesta.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRespuesta.Location = New System.Drawing.Point(30, 78)
         Me.lblRespuesta.Name = "lblRespuesta"
-        Me.lblRespuesta.Size = New System.Drawing.Size(81, 24)
+        Me.lblRespuesta.Size = New System.Drawing.Size(72, 24)
         Me.lblRespuesta.TabIndex = 2
-        Me.lblRespuesta.Text = "Pago: $"
+        Me.lblRespuesta.Text = "Letras:"
         '
-        'btnCalcular
+        'btnConvertir
         '
-        Me.btnCalcular.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalcular.Location = New System.Drawing.Point(106, 133)
-        Me.btnCalcular.Name = "btnCalcular"
-        Me.btnCalcular.Size = New System.Drawing.Size(156, 67)
-        Me.btnCalcular.TabIndex = 3
-        Me.btnCalcular.Text = "GUARDAR"
-        Me.btnCalcular.UseVisualStyleBackColor = True
+        Me.btnConvertir.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConvertir.Location = New System.Drawing.Point(106, 133)
+        Me.btnConvertir.Name = "btnConvertir"
+        Me.btnConvertir.Size = New System.Drawing.Size(156, 67)
+        Me.btnConvertir.TabIndex = 3
+        Me.btnConvertir.Text = "CONVERTIR"
+        Me.btnConvertir.UseVisualStyleBackColor = True
         '
         'erpConsumo
         '
         Me.erpConsumo.ContainerControl = Me
         '
-        'ltsHistorial
+        'lblValorLetras
         '
-        Me.ltsHistorial.FormattingEnabled = True
-        Me.ltsHistorial.Location = New System.Drawing.Point(303, 54)
-        Me.ltsHistorial.Name = "ltsHistorial"
-        Me.ltsHistorial.Size = New System.Drawing.Size(243, 199)
-        Me.ltsHistorial.TabIndex = 4
-        '
-        'lblHistorial
-        '
-        Me.lblHistorial.AutoSize = True
-        Me.lblHistorial.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHistorial.Location = New System.Drawing.Point(299, 9)
-        Me.lblHistorial.Name = "lblHistorial"
-        Me.lblHistorial.Size = New System.Drawing.Size(85, 24)
-        Me.lblHistorial.TabIndex = 5
-        Me.lblHistorial.Text = "Historial"
-        '
-        'lblPago
-        '
-        Me.lblPago.AutoSize = True
-        Me.lblPago.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPago.Location = New System.Drawing.Point(111, 78)
-        Me.lblPago.Name = "lblPago"
-        Me.lblPago.Size = New System.Drawing.Size(49, 24)
-        Me.lblPago.TabIndex = 6
-        Me.lblPago.Text = "0.00"
+        Me.lblValorLetras.AutoSize = True
+        Me.lblValorLetras.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblValorLetras.Location = New System.Drawing.Point(111, 78)
+        Me.lblValorLetras.Name = "lblValorLetras"
+        Me.lblValorLetras.Size = New System.Drawing.Size(55, 24)
+        Me.lblValorLetras.TabIndex = 6
+        Me.lblValorLetras.Text = "Cero"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(581, 286)
-        Me.Controls.Add(Me.lblPago)
-        Me.Controls.Add(Me.lblHistorial)
-        Me.Controls.Add(Me.ltsHistorial)
-        Me.Controls.Add(Me.btnCalcular)
+        Me.ClientSize = New System.Drawing.Size(555, 226)
+        Me.Controls.Add(Me.lblValorLetras)
+        Me.Controls.Add(Me.btnConvertir)
         Me.Controls.Add(Me.lblRespuesta)
-        Me.Controls.Add(Me.txtMetros)
-        Me.Controls.Add(Me.lblMetros)
+        Me.Controls.Add(Me.txtNumero)
+        Me.Controls.Add(Me.lblNumero)
         Me.Name = "Form1"
-        Me.Text = "Consumo de agua potable"
+        Me.Text = "Convertir numeros a letras"
         CType(Me.erpConsumo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents lblMetros As Label
-    Friend WithEvents txtMetros As TextBox
+    Friend WithEvents lblNumero As Label
+    Friend WithEvents txtNumero As TextBox
     Friend WithEvents lblRespuesta As Label
-    Friend WithEvents btnCalcular As Button
+    Friend WithEvents btnConvertir As Button
     Friend WithEvents erpConsumo As ErrorProvider
-    Friend WithEvents lblHistorial As Label
-    Friend WithEvents ltsHistorial As ListBox
-    Friend WithEvents lblPago As Label
+    Friend WithEvents lblValorLetras As Label
 End Class
